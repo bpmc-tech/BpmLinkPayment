@@ -54,19 +54,21 @@ EC-CUBE決済モジュールの導入は下記５つの手順にて行います�
 
 - EC-CUBE管理画面にログインし、メニュー `オーナーズストア` > `プラグイン` > `プラグイン一覧`をクリックし`プラグイン一覧`のページへ遷移してください。
 - 独自プラグインの`プラグインのアップロードはこちら`をクリックしてください。  
-![eccube001.png (38.59KB)](https://merchant.bpmc.jp/document/assets/20200320/df8a8203-1ba6-4388-b786-933c08638139)
+![001](https://user-images.githubusercontent.com/44288161/112596283-f5f50180-8e4e-11eb-83a4-a6b16e9787f5.png)
 
 - プラグインのアップロードへ移動したら`ファイルを選択`ボタンをクリックし、弊社よりお送りしたファイル`BpmLinkPaymentGateway_eccube3x_vx.x.x.zip`ファイルを選択してください。  
 ファイル選択ダイアログが表示されます。  
 ファイル選択ができましたら`アップロード`ボタンをクリックしてください。  
-![eccube002.png (15.01KB)](https://merchant.bpmc.jp/document/assets/20200320/79e9be86-638a-40e1-87d0-1aabcff6e6fb)  
+![002](https://user-images.githubusercontent.com/44288161/112596305-fc837900-8e4e-11eb-9d07-562b6888a6ce.png)
+
 プラグインページへ戻り、一覧に`BpmLinkPaymentGateway `が表示されていましたらインストールが成功です。
 
 ### 決済モジュールの有効化
 
 アップロードした段階では、決済モジュールは<b style="color:red">停止中</b>です。  
-一覧にある`有効にする`をクリックしてください。  
-![eccube003.png (21.3KB)](https://merchant.bpmc.jp/document/assets/20200320/367d42cf-402b-4193-9005-8fcb6bb5b316)
+一覧にある`▶`をクリックしてください。  
+![003](https://user-images.githubusercontent.com/44288161/112596370-10c77600-8e4f-11eb-90de-9a1279ed343d.png)
+
 
 `停止中`が消え、設定ボタンが表示されましたら、決済モジュールは有効になりました。  
 次は決済モジュールの設定を行います。
@@ -77,11 +79,14 @@ EC-CUBE決済モジュールの導入は下記５つの手順にて行います�
 
 - `設定`ボタンをクリックしてください。
 
-![eccube004.png (19.9KB)](https://merchant.bpmc.jp/document/assets/20200320/e3f82731-e7f8-4073-a95d-4070be657dc9)
+![004](https://user-images.githubusercontent.com/44288161/112596416-2472dc80-8e4f-11eb-83b1-7c4f6ed4790c.png)
 
 - 設定画面に移動したら、契約した際に弊社が発行した`API TOKEN`を入力してください。
+APIドメインには`payment.bpmc.jp`を入力してください。  
 入力が完了したら`設定`ボタンをクリックしてください。  
-![eccube005.png (32.96KB)](https://merchant.bpmc.jp/document/assets/20200320/913dbecc-299a-46c7-9cf9-3eb657be5072)  
+
+![005](https://user-images.githubusercontent.com/44288161/112596440-2f2d7180-8e4f-11eb-8e0d-745c4eeadd0c.png)
+
 <b style="color:red;">API TOKENは店舗管理システムにログイン後、`利用内容` => `システム利用内容`のページからご確認いただけます。</b>
 
 ### (2) 決済通知URLの設定
@@ -92,12 +97,14 @@ https://merchant.bpmc.jp/
 
 ログイン後、メニュー `決済システム管理` > `リンク決済` > `結果通知設定(HTTP)` をクリックし、結果通知設定(HTTP)画面に遷移してください。
 
+![006](https://user-images.githubusercontent.com/44288161/112596609-63089700-8e4f-11eb-8ea5-5728f11d6184.png)
+
 下記内容を設定してください。
 - **送信状態**  
-送信する(POST)
+送信する(GET)
 - **HTTP結果通知**
 ```
-http(s)://<あなたのEC-CUBEサイトドメイン>/bpm_link_payment/fook_result
+http(s)://<あなたのEC-CUBEサイトドメイン>/bpm_link_payment/receive_complete
 ```
 入力が完了したら`保存`ボタンをクリックしてください。
 
