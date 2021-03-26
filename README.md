@@ -3,8 +3,8 @@
 
 # BpmLinkPayment
 
-EC-CUBE4.x用のBPMクレジット決済プラグインです。
-EC-CUBE3.xをご利用のかたは、３系の専用プラグインをご利用ください。
+EC-CUBE4.x用のBPMクレジット決済プラグインです。  
+EC-CUBE3.xをご利用の場合は、３系の専用プラグインをご利用ください。  
 https://github.com/bpmc-tech/BpmLinkPaymentGateway3x
 
 
