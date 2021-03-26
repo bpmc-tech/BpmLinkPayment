@@ -1,0 +1,30 @@
+<script>
+    $(function () {
+        $('div.form-check', '#admin_search_order_bpm_link_payment_payment_status_id').addClass('form-check-inline');
+        $('.searchDetail__append').appendTo($('#searchDetail'));
+    })
+</script>
+<div class="row searchDetail__append">
+    <div class="col">
+        <label class="col-form-label">決済状態</label>
+        <div class="form-row align-items-center">
+            <div class="col">
+                {{ form_widget(searchForm.bpm_link_payment_payment_status_id) }}
+                {{ form_errors(searchForm.bpm_link_payment_payment_status_id) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <label class="col-form-label">決済承認番号</label>
+        <div class="form-row align-items-center">
+            <div class="col">
+                {{ form_widget(searchForm.bpm_link_payment_tran_code) }}
+                
+                {{ form_errors(searchForm.bpm_link_payment_tran_code) }}
+                
+            </div>
+        </div>
+    </div>
+
+</div>

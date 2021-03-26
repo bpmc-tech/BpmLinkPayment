@@ -1,0 +1,48 @@
+<div class="d-none">
+  <div id="bpm-link-payment-append-items">
+
+    <div class="row mb-3">
+      <label class="col-3">決済状況</label>
+      <div class="col">
+        {{ Order.bpm_link_payment_payment_status is not empty ? Order.bpm_link_payment_payment_status.name : '--' }}        
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-3">決済承認番号</label>
+      <div class="col">
+        {{ Order.bpm_link_payment_tran_code is not empty ? Order.bpm_link_payment_tran_code : '--' }}
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label class="col-3">決済明細表記名</label>
+      <div class="col">
+        {{ Order.bpm_link_payment_dba is not empty ? Order.bpm_link_payment_dba : '--' }}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+(function(){
+
+$(function(){
+  //var order_Payment = $('#order_Payment').val();
+  var paymentStatusName = '{{ Order.bpm_link_payment_payment_status is not empty ? Order.bpm_link_payment_payment_status.name : '--' }}';
+  var paymentStatusId = '{{ Order.bpm_link_payment_payment_status is not empty ? Order.bpm_link_payment_payment_status.id : '' }}';
+  var paymentTranCode = '{{ Order.bpm_link_payment_tran_code is not empty ? Order.bpm_link_payment_tran_code : '' }}';
+  var paymentTranDba = '{{ Order.bpm_link_payment_dba }}';
+  
+
+  var el_orderOverview = $('#orderOverview');
+  let el_target_c = $('.card-body .row .col-6').eq(0);
+
+  el_target_c.append($('#bpm-link-payment-append-items'));
+
+});
+
+
+})();
+</script>
