@@ -285,8 +285,17 @@ HTML;
     if (!$Order) {
       throw new NotFoundHttpException();
     }
+    
+    // 受注ステータスを新規受付へ変更
+    $OrderStatus = $this->orderStatusRepository->find(OrderStatus::NEW);
+
+    // TODO +++++++++++++++++++++++++++++++++++++++++++++
+    // 受注ステータスを入金済みにする場合「app/config/eccube/packages/order_state_machine.php」を変更してください。
+    // 参考: https://doc4.ec-cube.net/customize_order_state_machine
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++
     // 受注ステータスを入金済みへ変更
-    $OrderStatus = $this->orderStatusRepository->find(OrderStatus::PAID);
+    //$OrderStatus = $this->orderStatusRepository->find(OrderStatus::PAID);
+
     $Order->setOrderStatus($OrderStatus);
 
     // 決済ステータスを実売上へ変更
@@ -307,6 +316,8 @@ HTML;
 
     log_info('[注文処理] 注文メールの送信を行います.', [$Order->getId()]);
     $this->mailService->sendOrderMail($Order);
+
+    
 
     $this->entityManager->flush();
 
