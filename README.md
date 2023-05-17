@@ -3,10 +3,12 @@
 
 # BpmLinkPayment
 
-EC-CUBE4.x用のBPMクレジット決済プラグインです。  
+EC-CUBE4.0.x用のBPMクレジット決済プラグインです。  
 EC-CUBE3.xをご利用の場合は、３系の専用プラグインをご利用ください。  
 https://github.com/bpmc-tech/BpmLinkPaymentGateway3x
 
+**このプラグインはEC-CUBE.4.1+での利用はできません。
+EC-CUBE.4.1+では、Symfony4.4になっておりこのプラグインでは対応できません。**
 
 # ダウンロード
 事前に下記プラグインをダウンロードの上当ガイドをお読みください。
