@@ -15,7 +15,8 @@ EC-CUBE.4.1+では、Symfony4.4になっておりこのプラグインでは対�
 
 | バージョン | ダウンロード |
 |:-----------|:----------|
-| 最新(v1.0.1) | [BpmLinkPayment.v1_0_1.zip (29.4KB)](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.0.1) |
+| 最新(v1.1.0) | [BpmLinkPayment.v1_1_0.zip (45.0KB)](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.1.0) |
+| v1.0.1      | [BpmLinkPayment.v1_0_1.zip (29.4KB)](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.0.1) |
 
 
 # はじめに
