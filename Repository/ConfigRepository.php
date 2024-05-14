@@ -4,7 +4,8 @@ namespace Plugin\BpmLinkPayment\Repository;
 
 use Eccube\Repository\AbstractRepository;
 use Plugin\BpmLinkPayment\Entity\Config;
-use Symfony\Bridge\Doctrine\RegistryInterface;
+// use Symfony\Bridge\Doctrine\RegistryInterface;
+use Doctrine\Persistence\ManagerRegistry;
 
 /**
  * ConfigRepository
@@ -17,9 +18,11 @@ class ConfigRepository extends AbstractRepository
     /**
      * ConfigRepository constructor.
      *
-     * @param RegistryInterface $registry
+     *  RegistryInterface $registry # <-この行の@param削除
+     *  @param ManagerRegistry $registry　# <-この行へ変更
      */
-    public function __construct(RegistryInterface $registry)
+    // public function __construct(RegistryInterface $registry)
+    public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Config::class);
     }

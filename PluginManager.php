@@ -22,7 +22,7 @@ class PluginManager extends AbstractPluginManager {
   private function createLinkPayment(ContainerInterface $container) {
 
     $entityManager = $container->get('doctrine')->getManager();
-    $paymentRepository = $container->get(PaymentRepository::class);
+    $paymentRepository = $entityManager->getRepository(Payment::class);
 
     $Payment = $paymentRepository->findOneBy([], ['sort_no' => 'DESC']);
     $sortNo = $Payment ? $Payment->getSortNo() + 1 : 1;
