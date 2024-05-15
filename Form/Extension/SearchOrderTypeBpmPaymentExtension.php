@@ -39,6 +39,14 @@ class SearchOrderTypeBpmPaymentExtension extends AbstractTypeExtension {
   public function getExtendedType(){
     return SearchOrderType::class;
   }
+
+  //   /**
+  //    * Return the class of the type being extended.
+  //    */
+    public static function getExtendedTypes(): iterable
+    {
+       return [SearchOrderType::class];
+  }
 }
 
 
