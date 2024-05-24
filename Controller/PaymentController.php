@@ -156,8 +156,7 @@ class PaymentController extends AbstractController {
     $secure_flg = $config->getSecureFlg();
 
     if($secure_flg == 1){
-      // $redirect_url = "https://{$api_domain}/3ds/link/{$api_token}/payment";
-      $redirect_url = "https://nakamura-api.bpmc.tech/3ds/link/{$api_token}/payment";
+      $redirect_url = "https://{$api_domain}/3ds/link/{$api_token}/payment"; 
     }
 
     $html = <<<HTML
