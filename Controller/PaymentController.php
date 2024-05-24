@@ -151,6 +151,14 @@ class PaymentController extends AbstractController {
     $phoneNumber = htmlspecialchars($phoneNumber);
     $product_name = htmlspecialchars($product_name);
 
+    $redirect_url = "https://{$api_domain}/link/{$api_token}/payment";
+
+    $secure_flg = $config->getSecureFlg();
+
+    if($secure_flg == 1){
+      $redirect_url = "https://{$api_domain}/3ds/link/{$api_token}/payment"; 
+    }
+
     $html = <<<HTML
 <!DOCTYPE html>
 <html>
@@ -166,7 +174,7 @@ class PaymentController extends AbstractController {
       自動でBPMクレジットカード決済ページに移動します。<br>
       移動しない場合は「支払ページへ移動」をタップしてください。
     </p>
-    <form method="POST" action="https://{$api_domain}/link/{$api_token}/payment" id="form">
+    <form method="POST" action="{$redirect_url}" id="form">
       <input type="hidden" name="product" value="{$product_name}" />
       <input type="hidden" name="amount" value="{$paymentTotal}" />
       <input type="hidden" name="currency_code" value="{$currencyCode}" />

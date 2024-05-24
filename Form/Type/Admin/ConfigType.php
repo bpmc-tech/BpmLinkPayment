@@ -5,6 +5,7 @@ namespace Plugin\BpmLinkPayment\Form\Type\Admin;
 use Plugin\BpmLinkPayment\Entity\Config;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
@@ -30,6 +31,17 @@ class ConfigType extends AbstractType
                 new Length(['max' => 255]),
             ],
         ]);
+        $builder->add('secure_flg', ChoiceType::class, [
+            'choices' => array(
+                'OK' => '1',
+                'NO' => '0'
+                ),
+                'multiple' => false,
+                'expanded' => true,
+                'required' => true,
+                'placeholder' => '1',
+            ]
+        );
     }
 
     /**
