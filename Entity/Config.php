@@ -35,6 +35,13 @@ class Config
      */
     private $api_domain;
 
+     /**
+     * @var int
+     *
+     * @ORM\Column(name="secure_flg", type="integer", options={"default":0})
+     */
+    private $secure_flg;
+
     /**
      * @return int
      */
@@ -79,6 +86,25 @@ class Config
     public function setApiDomain($api_domain)
     {
         $this->api_domain = $api_domain;
+
+        return $this;
+    }
+    /**
+     * @return int
+     */
+    public function getSecureFlg()
+    {
+        return $this->secure_flg;
+    }
+
+    /**
+     * @param int $name
+     *
+     * @return $this;
+     */
+    public function setSecureFlg($secure_flg)
+    {
+        $this->secure_flg = $secure_flg;
 
         return $this;
     }
