@@ -63,12 +63,21 @@ EC-CUBE決済モジュールの導入は下記５つの手順にて行います�
 - 独自プラグインの`プラグインのアップロードはこちら`をクリックしてください。  
 ![001](https://user-images.githubusercontent.com/44288161/112596283-f5f50180-8e4e-11eb-83a4-a6b16e9787f5.png)
 
-- プラグインのアップロードへ移動したら`ファイルを選択`ボタンをクリックし、弊社よりお送りしたファイル`BpmLinkPaymentGateway_eccube3x_vx.x.x.zip`ファイルを選択してください。  
+- プラグインのアップロードへ移動したら`ファイルを選択`ボタンをクリックし、弊社よりお送りしたファイル`BpmLinkPaymentGateway.vx.x.x.zip`ファイルを選択してください。  
 ファイル選択ダイアログが表示されます。  
 ファイル選択ができましたら`アップロード`ボタンをクリックしてください。  
 ![002](https://user-images.githubusercontent.com/44288161/112596305-fc837900-8e4e-11eb-9d07-562b6888a6ce.png)
 
 プラグインページへ戻り、一覧に`BpmLinkPaymentGateway `が表示されていましたらインストールが成功です。
+
+### アップデート
+
+- 既に弊社プラグインをインストールしており、新しいバージョンにアップデートする際には`ファイルを選択`ボタンをクリックし、弊社よりお送りしたファイル`BpmLinkPaymentGateway.vx.x.x.zip`ファイルを選択してください。  
+ファイル選択ダイアログが表示されます。  
+ファイル選択ができましたら`アップロード`ボタンをクリックしてください。  
+![スクリーンショット 2025-03-31 14 15 49](https://github.com/user-attachments/assets/00cf1340-8d16-4a97-8a83-b6bcf192a35a)
+
+
 
 ### 決済モジュールの有効化
 
@@ -89,10 +98,11 @@ EC-CUBE決済モジュールの導入は下記５つの手順にて行います�
 ![004](https://user-images.githubusercontent.com/44288161/112596416-2472dc80-8e4f-11eb-83b1-7c4f6ed4790c.png)
 
 - 設定画面に移動したら、契約した際に弊社が発行した`API TOKEN`を入力してください。
-APIドメインには`payment.bpmc.jp`を入力してください。  
-入力が完了したら`設定`ボタンをクリックしてください。  
+APIドメインには`payment.bpmc.jp`を入力してください。
+3Dセキュアを利用の有無を設定してください。
+入力が完了したら`設定`ボタンをクリックしてください。
 
-![005](https://user-images.githubusercontent.com/44288161/112596440-2f2d7180-8e4f-11eb-8e0d-745c4eeadd0c.png)
+![スクリーンショット 2025-03-31 14 17 54](https://github.com/user-attachments/assets/8bf90970-0c05-4429-aabe-c4bc428133ba)
 
 <b style="color:red;">API TOKENは店舗管理システムにログイン後、`利用内容` => `システム利用内容`のページからご確認いただけます。</b>
 
