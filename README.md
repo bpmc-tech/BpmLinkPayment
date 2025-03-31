@@ -12,14 +12,12 @@ EC-CUBE.4.1+では、Symfony4.4になっておりこのプラグインでは対�
 
 # ダウンロード
 事前に下記プラグインをダウンロードの上当ガイドをお読みください。
-EC-CUBE4.0.x用はv1.0.1、
-4.2.x用はv1.1.0となっております。
 
-| バージョン | ダウンロード |
-|:-----------|:----------|
-| 最新(v1.2.0) | [BpmLinkPayment.v_1_2_0.zip](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.2.0/BpmLinkPayment.v_1_2_0.zip)
-| v1.1.0 | [BpmLinkPayment.v1_1_0.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.1.0) |
-| v1.0.1 | [BpmLinkPayment.v1_0_1.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.0.1) |
+| バージョン | ダウンロード | EC-CUBE本体 |
+|:-----------|:----------|:----------|
+| 最新(v1.2.0) | [BpmLinkPayment.v_1_2_0.zip](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.2.0/BpmLinkPayment.v_1_2_0.zip)|`4.2.0` `4.2.1` `4.2.2` `4.2.3` |
+| v1.1.0 | [BpmLinkPayment.v1_1_0.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.1.0) |`4.2.0` `4.2.1` `4.2.2` `4.2.3` |
+| v1.0.1 | [BpmLinkPayment.v1_0_1.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.0.1) | `4.0.3` `4.0.4` `4.0.5` |
 
 
 # はじめに
@@ -70,7 +68,7 @@ EC-CUBE決済モジュールの導入は下記５つの手順にて行います�
 
 プラグインページへ戻り、一覧に`BpmLinkPaymentGateway `が表示されていましたらインストールが成功です。
 
-### アップデート
+### プラグインのアップデート
 
 - 既に弊社プラグインをインストールしており、新しいバージョンにアップデートする際には`ファイルを選択`ボタンをクリックし、弊社よりお送りしたファイル`BpmLinkPaymentGateway.vx.x.x.zip`ファイルを選択してください。  
 ファイル選択ダイアログが表示されます。  
