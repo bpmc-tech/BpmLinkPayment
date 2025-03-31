@@ -1,6 +1,6 @@
 {
-  "name": "ec-cube/bpmlinkpayment",
-  "version": "1.0.0",
+  "name": "ec-cube/BpmLinkPayment",
+  "version": "1.2.0",
   "description": "BpmLinkPayment",
   "type": "eccube-plugin",
   "require": {
