@@ -17,7 +17,7 @@ EC-CUBE4.0.x用はv1.0.1、
 
 | バージョン | ダウンロード |
 |:-----------|:----------|
-| 最新(v1.2.0) | [BpmLinkPayment.v_1_2_0.zip](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.2.0)
+| 最新(v1.2.0) | [BpmLinkPayment.v_1_2_0.zip](https://github.com/bpmc-tech/BpmLinkPayment/releases/download/v1.2.0/BpmLinkPayment.v_1_2_0.zip)
 | v1.1.0 | [BpmLinkPayment.v1_1_0.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.1.0) |
 | v1.0.1 | [BpmLinkPayment.v1_0_1.zip ](https://github.com/bpmc-tech/BpmLinkPayment/releases/tag/v1.0.1) |
 
